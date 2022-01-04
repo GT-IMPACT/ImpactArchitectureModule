@@ -21,9 +21,13 @@ buildscript {
         maven {
             url "https://plugins.gradle.org/m2/"
         }
+        maven {
+            name = "jitpack"
+            url = "https://jitpack.io"
+        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'com.github.GT-IMPACT:ForgeGradle:1.2.4'
         classpath "de.undercouch:gradle-download-task:3.1.2"
     }
 }
